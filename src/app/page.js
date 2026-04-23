@@ -475,17 +475,30 @@ export default function Page() {
     return counts;
   }, []);
 
+  const shuffleOptions = (q) => {
+    const indices = q.options.map((_, i) => i);
+    for (let i = indices.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [indices[i], indices[j]] = [indices[j], indices[i]];
+    }
+    return {
+      ...q,
+      options: indices.map(i => q.options[i]),
+      answer: indices.indexOf(q.answer),
+    };
+  };
+
   const startQuiz = (cat, sub, size) => {
     let qs = QUESTIONS.filter(q => q.category === cat);
     if (sub !== "all") qs = qs.filter(q => q.subcategory === sub);
-    qs = [...qs].sort(() => Math.random() - 0.5).slice(0, size);
+    qs = [...qs].sort(() => Math.random() - 0.5).slice(0, size).map(shuffleOptions);
     setQuestions(qs);
     setCurrent(0); setSelected(null); setShowExp(false); setAnswers([]);
     setScreen("quiz");
   };
 
   const startWeak = () => {
-    const weakQ = QUESTIONS.filter(q => weak.has(q.id)).sort(() => Math.random() - 0.5);
+    const weakQ = QUESTIONS.filter(q => weak.has(q.id)).sort(() => Math.random() - 0.5).map(shuffleOptions);
     if (weakQ.length === 0) return;
     setQuestions(weakQ);
     setCurrent(0); setSelected(null); setShowExp(false); setAnswers([]);
