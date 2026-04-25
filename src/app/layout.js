@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/next";
+
 export const metadata = {
   title: "宮崎県 中学英語 教採対策トレーナー",
   description: "宮崎県公立学校教員採用選考試験（中学校英語）対策のための学習アプリ。文法200問＋中学英語学習指導要領200問、計400問を収録。",
@@ -18,6 +20,7 @@ export default function RootLayout({ children }) {
       </head>
       <body style={{ margin: 0, padding: 0, fontFamily: "'Georgia', 'Noto Serif JP', serif" }}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
