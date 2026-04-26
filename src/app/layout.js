@@ -3,6 +3,20 @@ import { Analytics } from "@vercel/analytics/next";
 export const metadata = {
   title: "宮崎県 中学英語 教採対策トレーナー",
   description: "宮崎県公立学校教員採用選考試験（中学校英語）対策のための学習アプリ。文法200問＋中学英語学習指導要領200問、計400問を収録。",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    title: "宮崎英語",
+    statusBarStyle: "black-translucent",
+  },
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/icon.svg", type: "image/svg+xml" }],
+  },
+};
+
+export const viewport = {
+  themeColor: "#0f1923",
 };
 
 export default function RootLayout({ children }) {
@@ -11,6 +25,10 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0f1923" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+        <link rel="apple-touch-icon" href="/icon.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

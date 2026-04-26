@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Miyazaki Eigo Trainer">
+  <defs>
+    <linearGradient id="bg" x1="138" y1="92" x2="886" y2="932" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#223348"/>
+      <stop offset="0.48" stop-color="#101b27"/>
+      <stop offset="1" stop-color="#07111b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="296" y1="210" x2="744" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe6b1"/>
+      <stop offset="0.42" stop-color="#c9a46a"/>
+      <stop offset="1" stop-color="#8e6a34"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="280" y1="245" x2="742" y2="786" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff3d0"/>
+      <stop offset="1" stop-color="#d3b47a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#000814" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="374" fill="none" stroke="#d6b06f" stroke-width="18" opacity="0.28"/>
+  <circle cx="512" cy="512" r="316" fill="none" stroke="#7eb8d4" stroke-width="10" opacity="0.18"/>
+  <g filter="url(#shadow)">
+    <path d="M269 298c0-37 30-67 67-67h262c77 0 140 63 140 140v354c0 38-31 68-68 68H336c-37 0-67-30-67-67V298Z" fill="#0b1420" opacity="0.95"/>
+    <path d="M336 231h262c77 0 140 63 140 140v31H478c-79 0-142-64-142-142v-29Z" fill="#16283b"/>
+    <path d="M336 260c0-16 13-29 29-29h223c82 0 150 67 150 150v344c0 37-31 68-68 68H365c-16 0-29-13-29-29V260Z" fill="none" stroke="url(#gold)" stroke-width="28"/>
+    <path d="M420 330h210c24 0 44 20 44 44v304c0 24-20 44-44 44H420c-24 0-44-20-44-44V374c0-24 20-44 44-44Z" fill="url(#paper)"/>
+    <path d="M442 438h173" stroke="#173047" stroke-width="35" stroke-linecap="round"/>
+    <path d="M442 526h142" stroke="#173047" stroke-width="35" stroke-linecap="round"/>
+    <path d="M442 614h173" stroke="#173047" stroke-width="35" stroke-linecap="round"/>
+  </g>
+  <path d="M286 765c116-84 232-84 348 0 43-54 88-88 134-102" fill="none" stroke="#7eb8d4" stroke-width="22" stroke-linecap="round" opacity="0.86"/>
+  <text x="512" y="595" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="256" font-weight="700" fill="#0f1923">E</text>
+  <text x="512" y="872" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="700" letter-spacing="8" fill="#f2dfba">MIYAZAKI</text>
+</svg>

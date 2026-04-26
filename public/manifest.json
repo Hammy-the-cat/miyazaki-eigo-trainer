@@ -1,0 +1,17 @@
+{
+  "name": "宮崎英語トレーナー",
+  "short_name": "英語Trainer",
+  "description": "宮崎県教員採用試験の中学校英語対策トレーニングアプリ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1923",
+  "theme_color": "#0f1923",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
